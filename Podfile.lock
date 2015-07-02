@@ -1,0 +1,10 @@
+PODS:
+  - Shapes (1.0.2)
+
+DEPENDENCIES:
+  - Shapes (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Shapes: 0e67e4324ce4a3cd0d4ca9431bd26387a677877f
+
+COCOAPODS: 0.37.2

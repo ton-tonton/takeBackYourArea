@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF2063E7E5A6CD07CDB10AB /* Shapes.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEAB299C463B092C25C99F3 /* Shapes.h */; };
+		16E05CE7C15E0C46BB21D7FC /* DTDimmingView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEAE287879BDA83EDBA0EC8 /* DTDimmingView.h */; };
+		1B5F7B17FE3A94F8C8675D57 /* DTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72300857B06855C09A040 /* DTProgressView.m */; };
+		1F019EF2EC550E23913DED1C /* Pods-takeBackYourArea-Shapes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B400A76561636AC9E3321F83 /* Pods-takeBackYourArea-Shapes-dummy.m */; };
+		2057FD899F5DC7C7CC20A6AA /* DTDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50DA052A4A6FF106BBB6EF /* DTDimmingView.m */; };
+		2918C2478CB978E7157C20F3 /* DTShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 226CD89403B7426C432B6ADB /* DTShapeView.h */; };
+		2C5565A6A62A7E00D81FCB2F /* DTShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F65DDAF5E9497C9FE5971B7A /* DTShapeView.m */; };
+		2DB10694184725EE3A8ED2EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18E4CE17CEF6F8F87F023A4 /* Foundation.framework */; };
+		30366D556791F063A099989D /* DTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = A37102B2730518EB1388DD49 /* DTProgressView.h */; };
+		390FB8A55C96E31C3CB2E4A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18E4CE17CEF6F8F87F023A4 /* Foundation.framework */; };
+		4269B9AE989B3F08DADFDDE8 /* DTAnimatableShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF59C3F80DB51A09CC5BDC2 /* DTAnimatableShapeLayer.m */; };
+		6BD95122C9E4409801323003 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB74D740F839D69514A243D8 /* UIKit.framework */; };
+		7492BEAA877915A6365316ED /* Pods-takeBackYourArea-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF87C0242D833DC447811EBF /* Pods-takeBackYourArea-dummy.m */; };
+		8BB244AFA7EDB167A4C0193A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25282F6D22E5135507DD0F9 /* QuartzCore.framework */; };
+		9A24179A820AA46727DACAF3 /* DTAnimatableShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AEF83E22DB6A0B5A4A1123 /* DTAnimatableShapeLayer.h */; };
+		AB98629D02C6515F8A52A623 /* CAShapeLayer+UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 512322131DC7326FDA5F0A91 /* CAShapeLayer+UIBezierPath.h */; };
+		AF560B9CFBCF55B062CD9AD9 /* CATransaction+AnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F72EFC7106ED76AF87F0D /* CATransaction+AnimateWithDuration.m */; };
+		B81403FEDC7ACA0474FC1A9F /* DTGraphicsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCC9C444150C1A7EFA95E4C /* DTGraphicsConverter.h */; };
+		BE442BA4A1B9870F4F73F3C0 /* DTShapeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FE02EDCA3BBB9460564A6511 /* DTShapeButton.h */; };
+		D2978A597C8AB2659BCA067A /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5BE3A9900D95C45D4F8971 /* CAShapeLayer+UIBezierPath.m */; };
+		D35330250D0BE7A72A224AD5 /* CATransaction+AnimateWithDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = CE38DB0F7A7631667C9F3E04 /* CATransaction+AnimateWithDuration.h */; };
+		DA3D1A92D6110CED9DCD849F /* DTShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A77A597584082A55C541EA8B /* DTShapeButton.m */; };
+		DDB6BEDB77B8072BA3F061C5 /* DTGraphicsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F4001AD3DB8910642EA4C /* DTGraphicsConverter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E69F8BF29B2F5258C4F0F649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1096FD8434BD6B38CD0931D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD07695D034FD3DA20C51F2D;
+			remoteInfo = "Pods-takeBackYourArea-Shapes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BCE746F272DF94E041CE997 /* Pods-takeBackYourArea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takeBackYourArea.release.xcconfig"; sourceTree = "<group>"; };
+		1D8F4001AD3DB8910642EA4C /* DTGraphicsConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTGraphicsConverter.m; path = Shapes/DTGraphicsConverter.m; sourceTree = "<group>"; };
+		226CD89403B7426C432B6ADB /* DTShapeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTShapeView.h; path = Shapes/DTShapeView.h; sourceTree = "<group>"; };
+		32F8A03338EB2D5AC8DD6683 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		352E191FC3B692CCC84677F3 /* Pods-takeBackYourArea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takeBackYourArea.debug.xcconfig"; sourceTree = "<group>"; };
+		454EBFD0F53DAA993C449EC6 /* Pods-takeBackYourArea-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-takeBackYourArea-environment.h"; sourceTree = "<group>"; };
+		512322131DC7326FDA5F0A91 /* CAShapeLayer+UIBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAShapeLayer+UIBezierPath.h"; path = "Shapes/CAShapeLayer+UIBezierPath.h"; sourceTree = "<group>"; };
+		6737DAEDF0D71749FC3FBA83 /* Pods-takeBackYourArea-Shapes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takeBackYourArea-Shapes.xcconfig"; sourceTree = "<group>"; };
+		7B4EDBFB72BA17B91C1B8DE9 /* libPods-takeBackYourArea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takeBackYourArea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DCC9C444150C1A7EFA95E4C /* DTGraphicsConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTGraphicsConverter.h; path = Shapes/DTGraphicsConverter.h; sourceTree = "<group>"; };
+		80B337F897B0A07ACD35DBA1 /* Pods-takeBackYourArea-Shapes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-takeBackYourArea-Shapes-prefix.pch"; sourceTree = "<group>"; };
+		8A8B0F7819D8EC83647E94C7 /* Pods-takeBackYourArea-Shapes-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-takeBackYourArea-Shapes-Private.xcconfig"; sourceTree = "<group>"; };
+		9CC72300857B06855C09A040 /* DTProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTProgressView.m; path = Shapes/DTProgressView.m; sourceTree = "<group>"; };
+		9F8BD9FEC02707E4F27E3D60 /* Pods-takeBackYourArea-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-takeBackYourArea-acknowledgements.plist"; sourceTree = "<group>"; };
+		A37102B2730518EB1388DD49 /* DTProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTProgressView.h; path = Shapes/DTProgressView.h; sourceTree = "<group>"; };
+		A5D8F88C4DC2B298BCF05EA0 /* libPods-takeBackYourArea-Shapes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takeBackYourArea-Shapes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77A597584082A55C541EA8B /* DTShapeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTShapeButton.m; path = Shapes/DTShapeButton.m; sourceTree = "<group>"; };
+		ACEAE287879BDA83EDBA0EC8 /* DTDimmingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTDimmingView.h; path = Shapes/DTDimmingView.h; sourceTree = "<group>"; };
+		B400A76561636AC9E3321F83 /* Pods-takeBackYourArea-Shapes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-takeBackYourArea-Shapes-dummy.m"; sourceTree = "<group>"; };
+		BAEAB299C463B092C25C99F3 /* Shapes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Shapes.h; path = Shapes/Shapes.h; sourceTree = "<group>"; };
+		BDF59C3F80DB51A09CC5BDC2 /* DTAnimatableShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTAnimatableShapeLayer.m; path = Shapes/DTAnimatableShapeLayer.m; sourceTree = "<group>"; };
+		C1150E642EA61E3A88D8F2F2 /* Pods-takeBackYourArea-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-takeBackYourArea-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C18F72EFC7106ED76AF87F0D /* CATransaction+AnimateWithDuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CATransaction+AnimateWithDuration.m"; path = "Shapes/CATransaction+AnimateWithDuration.m"; sourceTree = "<group>"; };
+		C25282F6D22E5135507DD0F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C9AEF83E22DB6A0B5A4A1123 /* DTAnimatableShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTAnimatableShapeLayer.h; path = Shapes/DTAnimatableShapeLayer.h; sourceTree = "<group>"; };
+		CB5BE3A9900D95C45D4F8971 /* CAShapeLayer+UIBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAShapeLayer+UIBezierPath.m"; path = "Shapes/CAShapeLayer+UIBezierPath.m"; sourceTree = "<group>"; };
+		CE38DB0F7A7631667C9F3E04 /* CATransaction+AnimateWithDuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CATransaction+AnimateWithDuration.h"; path = "Shapes/CATransaction+AnimateWithDuration.h"; sourceTree = "<group>"; };
+		CF87C0242D833DC447811EBF /* Pods-takeBackYourArea-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-takeBackYourArea-dummy.m"; sourceTree = "<group>"; };
+		D18E4CE17CEF6F8F87F023A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB74D740F839D69514A243D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0AF0AAEEA6C565E992B0FCD /* Pods-takeBackYourArea-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-takeBackYourArea-resources.sh"; sourceTree = "<group>"; };
+		F65DDAF5E9497C9FE5971B7A /* DTShapeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTShapeView.m; path = Shapes/DTShapeView.m; sourceTree = "<group>"; };
+		FA50DA052A4A6FF106BBB6EF /* DTDimmingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTDimmingView.m; path = Shapes/DTDimmingView.m; sourceTree = "<group>"; };
+		FE02EDCA3BBB9460564A6511 /* DTShapeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTShapeButton.h; path = Shapes/DTShapeButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575129307A45A0CB75ECCF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390FB8A55C96E31C3CB2E4A1 /* Foundation.framework in Frameworks */,
+				8BB244AFA7EDB167A4C0193A /* QuartzCore.framework in Frameworks */,
+				6BD95122C9E4409801323003 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647DE73F33F85289D8434123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB10694184725EE3A8ED2EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8917838180B902B26E9259 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D18E4CE17CEF6F8F87F023A4 /* Foundation.framework */,
+				C25282F6D22E5135507DD0F9 /* QuartzCore.framework */,
+				DB74D740F839D69514A243D8 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1C9412EDB6A77351759BF3C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6737DAEDF0D71749FC3FBA83 /* Pods-takeBackYourArea-Shapes.xcconfig */,
+				8A8B0F7819D8EC83647E94C7 /* Pods-takeBackYourArea-Shapes-Private.xcconfig */,
+				B400A76561636AC9E3321F83 /* Pods-takeBackYourArea-Shapes-dummy.m */,
+				80B337F897B0A07ACD35DBA1 /* Pods-takeBackYourArea-Shapes-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-takeBackYourArea-Shapes";
+			sourceTree = "<group>";
+		};
+		1CAC8C1623E2D6C279602D33 /* Pods-takeBackYourArea */ = {
+			isa = PBXGroup;
+			children = (
+				C1150E642EA61E3A88D8F2F2 /* Pods-takeBackYourArea-acknowledgements.markdown */,
+				9F8BD9FEC02707E4F27E3D60 /* Pods-takeBackYourArea-acknowledgements.plist */,
+				CF87C0242D833DC447811EBF /* Pods-takeBackYourArea-dummy.m */,
+				454EBFD0F53DAA993C449EC6 /* Pods-takeBackYourArea-environment.h */,
+				E0AF0AAEEA6C565E992B0FCD /* Pods-takeBackYourArea-resources.sh */,
+				352E191FC3B692CCC84677F3 /* Pods-takeBackYourArea.debug.xcconfig */,
+				0BCE746F272DF94E041CE997 /* Pods-takeBackYourArea.release.xcconfig */,
+			);
+			name = "Pods-takeBackYourArea";
+			path = "Target Support Files/Pods-takeBackYourArea";
+			sourceTree = "<group>";
+		};
+		223A5550E8F5329440EB27B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C8917838180B902B26E9259 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C64A17FF6566733E5606F9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71088C6B9D8D23BCE0F32F6B /* Shapes */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71088C6B9D8D23BCE0F32F6B /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				512322131DC7326FDA5F0A91 /* CAShapeLayer+UIBezierPath.h */,
+				CB5BE3A9900D95C45D4F8971 /* CAShapeLayer+UIBezierPath.m */,
+				CE38DB0F7A7631667C9F3E04 /* CATransaction+AnimateWithDuration.h */,
+				C18F72EFC7106ED76AF87F0D /* CATransaction+AnimateWithDuration.m */,
+				C9AEF83E22DB6A0B5A4A1123 /* DTAnimatableShapeLayer.h */,
+				BDF59C3F80DB51A09CC5BDC2 /* DTAnimatableShapeLayer.m */,
+				ACEAE287879BDA83EDBA0EC8 /* DTDimmingView.h */,
+				FA50DA052A4A6FF106BBB6EF /* DTDimmingView.m */,
+				7DCC9C444150C1A7EFA95E4C /* DTGraphicsConverter.h */,
+				1D8F4001AD3DB8910642EA4C /* DTGraphicsConverter.m */,
+				A37102B2730518EB1388DD49 /* DTProgressView.h */,
+				9CC72300857B06855C09A040 /* DTProgressView.m */,
+				FE02EDCA3BBB9460564A6511 /* DTShapeButton.h */,
+				A77A597584082A55C541EA8B /* DTShapeButton.m */,
+				226CD89403B7426C432B6ADB /* DTShapeView.h */,
+				F65DDAF5E9497C9FE5971B7A /* DTShapeView.m */,
+				BAEAB299C463B092C25C99F3 /* Shapes.h */,
+				1C9412EDB6A77351759BF3C0 /* Support Files */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		786BEDF5F4CC5E81ED3DB43D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B4EDBFB72BA17B91C1B8DE9 /* libPods-takeBackYourArea.a */,
+				A5D8F88C4DC2B298BCF05EA0 /* libPods-takeBackYourArea-Shapes.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81492891365012D173D80226 = {
+			isa = PBXGroup;
+			children = (
+				32F8A03338EB2D5AC8DD6683 /* Podfile */,
+				223A5550E8F5329440EB27B5 /* Frameworks */,
+				4C64A17FF6566733E5606F9A /* Pods */,
+				786BEDF5F4CC5E81ED3DB43D /* Products */,
+				CB86FF09D57934C25D936EE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CB86FF09D57934C25D936EE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC8C1623E2D6C279602D33 /* Pods-takeBackYourArea */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20A0AC5F6FCE144FEDEB48AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB98629D02C6515F8A52A623 /* CAShapeLayer+UIBezierPath.h in Headers */,
+				D35330250D0BE7A72A224AD5 /* CATransaction+AnimateWithDuration.h in Headers */,
+				9A24179A820AA46727DACAF3 /* DTAnimatableShapeLayer.h in Headers */,
+				16E05CE7C15E0C46BB21D7FC /* DTDimmingView.h in Headers */,
+				B81403FEDC7ACA0474FC1A9F /* DTGraphicsConverter.h in Headers */,
+				30366D556791F063A099989D /* DTProgressView.h in Headers */,
+				BE442BA4A1B9870F4F73F3C0 /* DTShapeButton.h in Headers */,
+				2918C2478CB978E7157C20F3 /* DTShapeView.h in Headers */,
+				0AF2063E7E5A6CD07CDB10AB /* Shapes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BD07695D034FD3DA20C51F2D /* Pods-takeBackYourArea-Shapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D651EBD3DCED860A927E1B /* Build configuration list for PBXNativeTarget "Pods-takeBackYourArea-Shapes" */;
+			buildPhases = (
+				2B5C670547E5E30F43D1E258 /* Sources */,
+				575129307A45A0CB75ECCF6C /* Frameworks */,
+				20A0AC5F6FCE144FEDEB48AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-takeBackYourArea-Shapes";
+			productName = "Pods-takeBackYourArea-Shapes";
+			productReference = A5D8F88C4DC2B298BCF05EA0 /* libPods-takeBackYourArea-Shapes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF3C0C9B96681192AB513D62 /* Pods-takeBackYourArea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4BE15825A848A8A7D08BAD /* Build configuration list for PBXNativeTarget "Pods-takeBackYourArea" */;
+			buildPhases = (
+				EA18CDE69D0A67EC4C8233D2 /* Sources */,
+				647DE73F33F85289D8434123 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7CA33E4A41701F05ECF613F /* PBXTargetDependency */,
+			);
+			name = "Pods-takeBackYourArea";
+			productName = "Pods-takeBackYourArea";
+			productReference = 7B4EDBFB72BA17B91C1B8DE9 /* libPods-takeBackYourArea.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1096FD8434BD6B38CD0931D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 89BAF92AF27D578801417083 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81492891365012D173D80226;
+			productRefGroup = 786BEDF5F4CC5E81ED3DB43D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF3C0C9B96681192AB513D62 /* Pods-takeBackYourArea */,
+				BD07695D034FD3DA20C51F2D /* Pods-takeBackYourArea-Shapes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B5C670547E5E30F43D1E258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2978A597C8AB2659BCA067A /* CAShapeLayer+UIBezierPath.m in Sources */,
+				AF560B9CFBCF55B062CD9AD9 /* CATransaction+AnimateWithDuration.m in Sources */,
+				4269B9AE989B3F08DADFDDE8 /* DTAnimatableShapeLayer.m in Sources */,
+				2057FD899F5DC7C7CC20A6AA /* DTDimmingView.m in Sources */,
+				DDB6BEDB77B8072BA3F061C5 /* DTGraphicsConverter.m in Sources */,
+				1B5F7B17FE3A94F8C8675D57 /* DTProgressView.m in Sources */,
+				DA3D1A92D6110CED9DCD849F /* DTShapeButton.m in Sources */,
+				2C5565A6A62A7E00D81FCB2F /* DTShapeView.m in Sources */,
+				1F019EF2EC550E23913DED1C /* Pods-takeBackYourArea-Shapes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA18CDE69D0A67EC4C8233D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7492BEAA877915A6365316ED /* Pods-takeBackYourArea-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7CA33E4A41701F05ECF613F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-takeBackYourArea-Shapes";
+			target = BD07695D034FD3DA20C51F2D /* Pods-takeBackYourArea-Shapes */;
+			targetProxy = E69F8BF29B2F5258C4F0F649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32CE643BB76C1A513D4D756D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352E191FC3B692CCC84677F3 /* Pods-takeBackYourArea.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67932C96E44BA6E4C3319FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		782A668CAD2EF55AADADFBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8B0F7819D8EC83647E94C7 /* Pods-takeBackYourArea-Shapes-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-takeBackYourArea-Shapes/Pods-takeBackYourArea-Shapes-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8326E6D5229A23995809A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8A2E4A096BD375ADDF23D578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BCE746F272DF94E041CE997 /* Pods-takeBackYourArea.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A03B6673DE091AB7207B3F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8B0F7819D8EC83647E94C7 /* Pods-takeBackYourArea-Shapes-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-takeBackYourArea-Shapes/Pods-takeBackYourArea-Shapes-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89BAF92AF27D578801417083 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8326E6D5229A23995809A4DB /* Debug */,
+				67932C96E44BA6E4C3319FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D651EBD3DCED860A927E1B /* Build configuration list for PBXNativeTarget "Pods-takeBackYourArea-Shapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03B6673DE091AB7207B3F7A /* Debug */,
+				782A668CAD2EF55AADADFBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4BE15825A848A8A7D08BAD /* Build configuration list for PBXNativeTarget "Pods-takeBackYourArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32CE643BB76C1A513D4D756D /* Debug */,
+				8A2E4A096BD375ADDF23D578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1096FD8434BD6B38CD0931D /* Project object */;
+}
