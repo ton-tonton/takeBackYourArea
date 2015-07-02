@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NSLog("Bello")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +21,6 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -31,5 +30,19 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Unwide Segue
+    
+    @IBAction func cancelToHomeViewController(segue: UIStoryboardSegue) {
+        NSLog("cancel")
+    }
+    
+    @IBAction func addItem(segue: UIStoryboardSegue) {
+        NSLog("add")
+    }
+    
+    @IBAction func doneSetting(segue: UIStoryboardSegue) {
+        
+    }
 
 }
