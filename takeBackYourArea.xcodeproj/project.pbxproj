@@ -38,6 +38,7 @@
 		1C2E3F2E1B44D74200D2717D /* takeBackYourAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = takeBackYourAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2E3F331B44D74200D2717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C2E3F341B44D74200D2717D /* takeBackYourAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takeBackYourAreaTests.swift; sourceTree = "<group>"; };
+		1C2E3F3E1B44DBA300D2717D /* takeBackYourArea-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "takeBackYourArea-Bridging-Header.h"; sourceTree = "<group>"; };
 		5036D5E472B9F7F5AD9920CC /* libPods-takeBackYourArea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takeBackYourArea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AB00050E6964182D06FC88 /* Pods-takeBackYourArea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takeBackYourArea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takeBackYourArea/Pods-takeBackYourArea.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +93,7 @@
 		1C2E3F1B1B44D74200D2717D /* takeBackYourArea */ = {
 			isa = PBXGroup;
 			children = (
+				1C2E3F3E1B44DBA300D2717D /* takeBackYourArea-Bridging-Header.h */,
 				1C2E3F1E1B44D74200D2717D /* AppDelegate.swift */,
 				1C2E3F201B44D74200D2717D /* ViewController.swift */,
 				1C2E3F221B44D74200D2717D /* Main.storyboard */,
@@ -403,6 +405,7 @@
 				INFOPLIST_FILE = takeBackYourArea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "takeBackYourArea/takeBackYourArea-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -414,6 +417,7 @@
 				INFOPLIST_FILE = takeBackYourArea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "takeBackYourArea/takeBackYourArea-Bridging-Header.h";
 			};
 			name = Release;
 		};
