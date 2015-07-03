@@ -8,12 +8,12 @@
 
 import UIKit
 
-let UNITS = ["Millimeter", "Inch"]
+let DEFAULT_UNIT_INDEX = 0
 
 class SettingTableViewController: UITableViewController {
     
-    var selectedUnit: String = String()
-    var selectedUnitIndex: Int = Int()
+    var units = []
+    var selectedUnitIndex: Int = DEFAULT_UNIT_INDEX
     
     @IBOutlet weak var millimeter: UITableViewCell!
     @IBOutlet weak var inch: UITableViewCell!
@@ -21,9 +21,15 @@ class SettingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.millimeter.accessoryType = .Checkmark
-        self.selectedUnit = UNITS[0]
-        self.selectedUnitIndex = 0
+        units = [millimeter, inch]
+        var defaults = NSUserDefaults.standardUserDefaults()
+        
+        if defaults.objectForKey("Unit") != nil {
+            selectedUnitIndex = defaults.integerForKey("Unit")
+        }
+
+        let cell = units[selectedUnitIndex] as! UITableViewCell
+        cell.accessoryType = .Checkmark
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +46,10 @@ class SettingTableViewController: UITableViewController {
             cell?.accessoryType = .None
         }
         
-        self.selectedUnitIndex = indexPath.row
-        self.selectedUnit = UNITS[indexPath.row]
+        selectedUnitIndex = indexPath.row
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(selectedUnitIndex, forKey: "Unit")
         
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         cell?.accessoryType = .Checkmark
