@@ -9,12 +9,18 @@
 import UIKit
 
 let DEFAULT_UNIT_INDEX = 0
+let DEFAULT_WIDTH = 600.00
+let DEFAULT_HEIGHT = 600.00
+
+let TOTAL_AREA_SECTION = 0
+let UNIT_SECTION = 1
 
 class SettingTableViewController: UITableViewController {
     
     var units = []
     var selectedUnitIndex: Int = DEFAULT_UNIT_INDEX
     
+    @IBOutlet weak var totalArea: UITableViewCell!
     @IBOutlet weak var millimeter: UITableViewCell!
     @IBOutlet weak var inch: UITableViewCell!
     
@@ -27,7 +33,7 @@ class SettingTableViewController: UITableViewController {
         if defaults.objectForKey("Unit") != nil {
             selectedUnitIndex = defaults.integerForKey("Unit")
         }
-
+        
         let cell = units[selectedUnitIndex] as! UITableViewCell
         cell.accessoryType = .Checkmark
     }
@@ -41,18 +47,22 @@ class SettingTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if indexPath.row != self.selectedUnitIndex {
-            let cell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: self.selectedUnitIndex, inSection: 0))
-            cell?.accessoryType = .None
+        if indexPath.section == UNIT_SECTION {
+            
+            if indexPath.row != selectedUnitIndex {
+                let selectedUnitIndexPath = NSIndexPath(forRow: selectedUnitIndex, inSection: UNIT_SECTION)
+                let selectedUnitCell = tableView.cellForRowAtIndexPath(selectedUnitIndexPath)
+                selectedUnitCell?.accessoryType = .None
+            }
+            
+            selectedUnitIndex = indexPath.row
+            
+            var defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setInteger(selectedUnitIndex, forKey: "Unit")
+            
+            let selectedUnitCell = tableView.cellForRowAtIndexPath(indexPath)
+            selectedUnitCell?.accessoryType = .Checkmark
         }
-        
-        selectedUnitIndex = indexPath.row
-        
-        var defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setInteger(selectedUnitIndex, forKey: "Unit")
-        
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        cell?.accessoryType = .Checkmark
     }
 
     /*
