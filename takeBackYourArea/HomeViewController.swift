@@ -9,16 +9,18 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var area = Area()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        NSLog("Bello")
+        
+        area.width = 0
+        area.height = 0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     /*
@@ -31,15 +33,10 @@ class HomeViewController: UIViewController {
     }
     */
     
+    // MARK: - Action
+    
+    
     // MARK: - Unwide Segue
-    
-    @IBAction func cancelToHomeViewController(segue: UIStoryboardSegue) {
-        NSLog("cancel")
-    }
-    
-    @IBAction func addItem(segue: UIStoryboardSegue) {
-        NSLog("add")
-    }
     
     @IBAction func doneSetting(segue: UIStoryboardSegue) {
         

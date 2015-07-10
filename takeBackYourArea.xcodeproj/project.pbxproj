@@ -14,6 +14,8 @@
 		1C2E3F401B44EFD200D2717D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E3F3F1B44EFD200D2717D /* HomeViewController.swift */; };
 		1C590CCF1B4521B4008444FF /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C590CCE1B4521B4008444FF /* AddItemTableViewController.swift */; };
 		1C590CD11B4521C2008444FF /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C590CD01B4521C2008444FF /* SettingTableViewController.swift */; };
+		1C7066BC1B4FBB7B0052BC1B /* SettingTotalAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7066BB1B4FBB7B0052BC1B /* SettingTotalAreaViewController.swift */; };
+		1C7066C01B4FCE760052BC1B /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7066BF1B4FCE760052BC1B /* Area.swift */; };
 		DAE05B62E2A626566A411D6B /* libPods-takeBackYourArea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5036D5E472B9F7F5AD9920CC /* libPods-takeBackYourArea.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		1C2E3F3F1B44EFD200D2717D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C590CCE1B4521B4008444FF /* AddItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
 		1C590CD01B4521C2008444FF /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		1C7066BB1B4FBB7B0052BC1B /* SettingTotalAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTotalAreaViewController.swift; sourceTree = "<group>"; };
+		1C7066BF1B4FCE760052BC1B /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		5036D5E472B9F7F5AD9920CC /* libPods-takeBackYourArea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takeBackYourArea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AB00050E6964182D06FC88 /* Pods-takeBackYourArea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takeBackYourArea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takeBackYourArea/Pods-takeBackYourArea.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,8 +102,10 @@
 				1C2E3F3E1B44DBA300D2717D /* takeBackYourArea-Bridging-Header.h */,
 				1C2E3F1E1B44D74200D2717D /* AppDelegate.swift */,
 				1C2E3F3F1B44EFD200D2717D /* HomeViewController.swift */,
+				1C7066BF1B4FCE760052BC1B /* Area.swift */,
 				1C590CCE1B4521B4008444FF /* AddItemTableViewController.swift */,
 				1C590CD01B4521C2008444FF /* SettingTableViewController.swift */,
+				1C7066BB1B4FBB7B0052BC1B /* SettingTotalAreaViewController.swift */,
 				1C2E3F221B44D74200D2717D /* Main.storyboard */,
 				1C2E3F251B44D74200D2717D /* Images.xcassets */,
 				1C2E3F1C1B44D74200D2717D /* Supporting Files */,
@@ -276,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C590CD11B4521C2008444FF /* SettingTableViewController.swift in Sources */,
+				1C7066BC1B4FBB7B0052BC1B /* SettingTotalAreaViewController.swift in Sources */,
 				1C2E3F1F1B44D74200D2717D /* AppDelegate.swift in Sources */,
 				1C2E3F401B44EFD200D2717D /* HomeViewController.swift in Sources */,
+				1C7066C01B4FCE760052BC1B /* Area.swift in Sources */,
 				1C590CCF1B4521B4008444FF /* AddItemTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
