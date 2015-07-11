@@ -55,6 +55,12 @@ class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    // MARK: - Event
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 
