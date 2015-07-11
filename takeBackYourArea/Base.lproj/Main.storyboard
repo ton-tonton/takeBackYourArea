@@ -145,7 +145,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HJD-EE-pRt" kind="show" id="Ze7-Vp-9zu"/>
+                                            <segue destination="HJD-EE-pRt" kind="show" identifier="showSettingTotalArea" id="Ze7-Vp-9zu"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -200,9 +200,9 @@
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="inch" destination="WMl-0k-t51" id="vEo-Gq-5TM"/>
-                        <outlet property="millimeter" destination="uMF-wX-b1r" id="Esr-gS-dcg"/>
-                        <outlet property="totalArea" destination="h8e-RZ-DNT" id="p96-py-vzh"/>
+                        <outlet property="inchCell" destination="WMl-0k-t51" id="0oU-gH-B6V"/>
+                        <outlet property="millimeterCell" destination="uMF-wX-b1r" id="hgB-cN-aOK"/>
+                        <outlet property="totalAreaCell" destination="h8e-RZ-DNT" id="AaB-U9-rAw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Kk-tQ-L8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

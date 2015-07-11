@@ -9,8 +9,8 @@
 import UIKit
 
 let DEFAULT_UNIT_INDEX = 0
-let DEFAULT_WIDTH = 600.00
-let DEFAULT_HEIGHT = 600.00
+let DEFAULT_WIDTH = 600
+let DEFAULT_HEIGHT = 600
 
 let TOTAL_AREA_SECTION = 0
 let UNIT_SECTION = 1
@@ -19,23 +19,38 @@ class SettingTableViewController: UITableViewController {
     
     var units = []
     var selectedUnitIndex: Int = DEFAULT_UNIT_INDEX
+    var totalArea = Area()
     
-    @IBOutlet weak var totalArea: UITableViewCell!
-    @IBOutlet weak var millimeter: UITableViewCell!
-    @IBOutlet weak var inch: UITableViewCell!
+    @IBOutlet weak var totalAreaCell: UITableViewCell!
+    @IBOutlet weak var millimeterCell: UITableViewCell!
+    @IBOutlet weak var inchCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        units = [millimeter, inch]
+        units = [millimeterCell, inchCell]
+        
+        totalArea.width = Double(DEFAULT_WIDTH)
+        totalArea.height = Double(DEFAULT_HEIGHT)
+        
         var defaults = NSUserDefaults.standardUserDefaults()
+        
+        if defaults.objectForKey("TotalWidth") != nil {
+            totalArea.width = defaults.doubleForKey("TotalWidth")
+        }
+        
+        if defaults.objectForKey("TotalHeight") != nil {
+            totalArea.height = defaults.doubleForKey("TotalHeight")
+        }
         
         if defaults.objectForKey("Unit") != nil {
             selectedUnitIndex = defaults.integerForKey("Unit")
         }
         
-        let cell = units[selectedUnitIndex] as! UITableViewCell
-        cell.accessoryType = .Checkmark
+        totalAreaCell.textLabel?.text = "\(totalArea.width) × \(totalArea.height)"
+        
+        let unitCell = units[selectedUnitIndex] as! UITableViewCell
+        unitCell.accessoryType = .Checkmark
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,14 +80,14 @@ class SettingTableViewController: UITableViewController {
         }
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showSettingTotalArea" {
+            let settingTotalAreaViewController = segue.destinationViewController as! SettingTotalAreaViewController
+            settingTotalAreaViewController.width = totalArea.width
+            settingTotalAreaViewController.height = totalArea.height
+        }
     }
-    */
 
 }

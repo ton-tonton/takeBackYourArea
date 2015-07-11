@@ -10,6 +10,9 @@ import UIKit
 
 class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
     
+    var width = Double()
+    var height = Double()
+    
     @IBOutlet weak var widthTextField: UITextField!
     @IBOutlet weak var heightTextField: UITextField!
     
@@ -19,16 +22,16 @@ class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
         widthTextField.delegate = self
         widthTextField.keyboardType = .NumbersAndPunctuation
         widthTextField.returnKeyType = .Done
+        widthTextField.text = "\(width)"
         
         heightTextField.delegate = self
         heightTextField.keyboardType = .NumbersAndPunctuation
         heightTextField.returnKeyType = .Done
-        
+        heightTextField.text = "\(height)"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: - TextFieldDelegate
