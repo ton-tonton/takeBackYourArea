@@ -262,6 +262,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Total Area" id="LFC-8d-KFY"/>
+                    <connections>
+                        <outlet property="heightTextField" destination="h4H-Ac-GaM" id="YF1-Jq-vlB"/>
+                        <outlet property="widthTextField" destination="8Po-JK-GqK" id="e5i-JB-Qvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Okl-YE-gRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,10 +8,22 @@
 
 import UIKit
 
-class SettingTotalAreaViewController: UIViewController {
-
+class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var widthTextField: UITextField!
+    @IBOutlet weak var heightTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        widthTextField.delegate = self
+        widthTextField.keyboardType = .NumbersAndPunctuation
+        widthTextField.returnKeyType = .Done
+        
+        heightTextField.delegate = self
+        heightTextField.keyboardType = .NumbersAndPunctuation
+        heightTextField.returnKeyType = .Done
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -19,7 +31,30 @@ class SettingTotalAreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //MARK: - TextFieldDelegate
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        var isNumber = true
+        let prospectiveText = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        
+        if count(string) > 0 {
+            let disallowedCharacterSet = NSCharacterSet(charactersInString: "0123456789.").invertedSet
+            let replacementStringIsLegal = string.rangeOfCharacterFromSet(disallowedCharacterSet) == nil
+            
+            let scanner = NSScanner(string: prospectiveText)
+            let resultingTextIsNumberic = scanner.scanDecimal(nil) && scanner.atEnd
+            
+            isNumber = replacementStringIsLegal && resultingTextIsNumberic
+        }
+        
+        return isNumber
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     /*
     // MARK: - Navigation
 
