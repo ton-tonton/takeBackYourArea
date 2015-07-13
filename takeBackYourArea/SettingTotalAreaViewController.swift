@@ -29,6 +29,18 @@ class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
         heightTextField.returnKeyType = .Done
         heightTextField.text = "\(height)"
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        
+        let width = widthTextField.text
+        let height = heightTextField.text
+        
+        defaults.setObject(width, forKey: "TotalWidth")
+        defaults.setObject(height, forKey: "TotalHeight")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

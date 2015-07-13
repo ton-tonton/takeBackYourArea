@@ -30,27 +30,22 @@ class SettingTableViewController: UITableViewController {
         
         units = [millimeterCell, inchCell]
         
-        totalArea.width = "\(DEFAULT_WIDTH)"
-        totalArea.height = "\(DEFAULT_HEIGHT)"
-        
         var defaults = NSUserDefaults.standardUserDefaults()
-        
-        if let width = defaults.stringForKey("TotalWidth") {
-            totalArea.width = width
-        }
-        
-        if let height = defaults.stringForKey("TotalHeight") {
-            totalArea.height = height
-        }
         
         if defaults.objectForKey("Unit") != nil {
             selectedUnitIndex = defaults.integerForKey("Unit")
         }
         
-        totalAreaCell.textLabel?.text = "\(totalArea.width) × \(totalArea.height)"
-        
         let unitCell = units[selectedUnitIndex] as! UITableViewCell
         unitCell.accessoryType = .Checkmark
+        
+        updateTotalArea()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateTotalArea()
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,6 +73,25 @@ class SettingTableViewController: UITableViewController {
             let selectedUnitCell = tableView.cellForRowAtIndexPath(indexPath)
             selectedUnitCell?.accessoryType = .Checkmark
         }
+    }
+    
+    // MARK: - function
+    
+    func updateTotalArea() {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        
+        totalArea.width = "\(DEFAULT_WIDTH)"
+        totalArea.height = "\(DEFAULT_HEIGHT)"
+        
+        if let width = defaults.stringForKey("TotalWidth") {
+            totalArea.width = width
+        }
+        
+        if let height = defaults.stringForKey("TotalHeight") {
+            totalArea.height = height
+        }
+        
+        totalAreaCell.textLabel?.text = "\(totalArea.width) × \(totalArea.height)"
     }
 
     // MARK: - Navigation
