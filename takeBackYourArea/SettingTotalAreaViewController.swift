@@ -10,8 +10,8 @@ import UIKit
 
 class SettingTotalAreaViewController: UIViewController, UITextFieldDelegate {
     
-    var width = Double()
-    var height = Double()
+    var width = String()
+    var height = String()
     
     @IBOutlet weak var widthTextField: UITextField!
     @IBOutlet weak var heightTextField: UITextField!

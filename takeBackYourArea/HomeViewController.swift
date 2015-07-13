@@ -10,13 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var area = Area()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        area.width = 0
-        area.height = 0
     }
 
     override func didReceiveMemoryWarning() {

@@ -30,17 +30,17 @@ class SettingTableViewController: UITableViewController {
         
         units = [millimeterCell, inchCell]
         
-        totalArea.width = Double(DEFAULT_WIDTH)
-        totalArea.height = Double(DEFAULT_HEIGHT)
+        totalArea.width = "\(DEFAULT_WIDTH)"
+        totalArea.height = "\(DEFAULT_HEIGHT)"
         
         var defaults = NSUserDefaults.standardUserDefaults()
         
-        if defaults.objectForKey("TotalWidth") != nil {
-            totalArea.width = defaults.doubleForKey("TotalWidth")
+        if let width = defaults.stringForKey("TotalWidth") {
+            totalArea.width = width
         }
         
-        if defaults.objectForKey("TotalHeight") != nil {
-            totalArea.height = defaults.doubleForKey("TotalHeight")
+        if let height = defaults.stringForKey("TotalHeight") {
+            totalArea.height = height
         }
         
         if defaults.objectForKey("Unit") != nil {

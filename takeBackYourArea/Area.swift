@@ -9,6 +9,6 @@
 import UIKit
 
 class Area: NSObject {
-    var width = Double()
-    var height = Double()
+    var width = String()
+    var height = String()
 }
