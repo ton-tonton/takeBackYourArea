@@ -9,8 +9,6 @@
 import UIKit
 
 let DEFAULT_UNIT_INDEX = 0
-let DEFAULT_WIDTH = 600
-let DEFAULT_HEIGHT = 600
 
 let TOTAL_AREA_SECTION = 0
 let UNIT_SECTION = 1
@@ -39,13 +37,13 @@ class SettingTableViewController: UITableViewController {
         let unitCell = units[selectedUnitIndex] as! UITableViewCell
         unitCell.accessoryType = .Checkmark
         
-        updateTotalArea()
+        setTotalArea()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        updateTotalArea()
+        setTotalArea()
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,11 +75,8 @@ class SettingTableViewController: UITableViewController {
     
     // MARK: - function
     
-    func updateTotalArea() {
+    func setTotalArea() {
         var defaults = NSUserDefaults.standardUserDefaults()
-        
-        totalArea.width = "\(DEFAULT_WIDTH)"
-        totalArea.height = "\(DEFAULT_HEIGHT)"
         
         if let width = defaults.stringForKey("TotalWidth") {
             totalArea.width = width

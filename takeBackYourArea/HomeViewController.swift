@@ -8,29 +8,64 @@
 
 import UIKit
 
+let DEFAULT_WIDTH = 600
+let DEFAULT_HEIGHT = 600
+
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var widthHeightLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    
+    var containerViewArea = Area()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setContainerViewArea()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setContainerViewArea()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     // MARK: - Action
     
+    
+    // MARK: - Function
+    
+    func setContainerViewArea() {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        
+        containerViewArea.width = "\(DEFAULT_WIDTH)"
+        containerViewArea.height = "\(DEFAULT_HEIGHT)"
+        
+        if let width = defaults.stringForKey("TotalWidth") {
+            containerViewArea.width  = width
+        }
+        
+        if let height = defaults.stringForKey("TotalHeight") {
+            containerViewArea.height = height
+        }
+        
+        widthHeightLabel.text = "\(containerViewArea.width) × \(containerViewArea.height)"
+    }
+    
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "modalSetting" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let settingTableViewController = navigationController.topViewController as! SettingTableViewController
+            settingTableViewController.totalArea = containerViewArea
+        }
+    }
     
     // MARK: - Unwide Segue
     
