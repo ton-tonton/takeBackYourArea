@@ -23,8 +23,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setContainerViewArea()
     }
     
     override func viewWillAppear(animated: Bool) {
