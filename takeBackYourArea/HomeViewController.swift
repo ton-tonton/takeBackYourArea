@@ -11,7 +11,7 @@ import UIKit
 let DEFAULT_WIDTH = 600
 let DEFAULT_HEIGHT = 600
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var widthHeightLabel: UILabel!
     @IBOutlet weak var containerView: ContainerView!
@@ -49,10 +49,16 @@ class HomeViewController: UIViewController {
         
         alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) in
             textField.placeholder = "Width"
+            textField.keyboardType = .NumbersAndPunctuation
+            textField.returnKeyType = .Done
+            textField.delegate = self
         }
         
         alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) in
             textField.placeholder = "Height"
+            textField.keyboardType = .NumbersAndPunctuation
+            textField.returnKeyType = .Done
+            textField.delegate = self
         }
         
         alert.addAction(insert)
@@ -86,6 +92,26 @@ class HomeViewController: UIViewController {
         widthConstraint.constant = CGFloat(assumeWidth)
         heightConstraint.constant = CGFloat(assumeHeight)
     }
+    
+    //MARK: - TextField Delegate
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        var isNumber = true
+        let prospectiveText = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        
+        if count(string) > 0 {
+            let disallowedCharacterSet = NSCharacterSet(charactersInString: "0123456789.").invertedSet
+            let replacementStringIsLegal = string.rangeOfCharacterFromSet(disallowedCharacterSet) == nil
+            
+            let scanner = NSScanner(string: prospectiveText)
+            let resultingTextIsNumberic = scanner.scanDecimal(nil) && scanner.atEnd
+            
+            isNumber = replacementStringIsLegal && resultingTextIsNumberic
+        }
+        
+        return isNumber
+    }
+    
     
     // MARK: - Navigation
     
