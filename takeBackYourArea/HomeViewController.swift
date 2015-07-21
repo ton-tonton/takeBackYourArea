@@ -37,6 +37,29 @@ class HomeViewController: UIViewController {
     
     // MARK: - Action
     
+    @IBAction func addItem(sender: AnyObject) {
+        var alert = UIAlertController(title: "Add Item", message: "Insert Width and Height", preferredStyle: .Alert)
+        
+        let insert = UIAlertAction(title: "OK", style: .Default) { (action: UIAlertAction!) in
+            let widthTextFeild = alert.textFields![0] as! UITextField
+            let heightTextFeild = alert.textFields![1] as! UITextField
+        }
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .Default) { (action: UIAlertAction!) in }
+        
+        alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) in
+            textField.placeholder = "Width"
+        }
+        
+        alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) in
+            textField.placeholder = "Height"
+        }
+        
+        alert.addAction(insert)
+        alert.addAction(cancel)
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
     
     // MARK: - Function
     
@@ -63,7 +86,6 @@ class HomeViewController: UIViewController {
         widthConstraint.constant = CGFloat(assumeWidth)
         heightConstraint.constant = CGFloat(assumeHeight)
     }
-    
     
     // MARK: - Navigation
     
