@@ -14,7 +14,10 @@ let DEFAULT_HEIGHT = 600
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var widthHeightLabel: UILabel!
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerView: ContainerView!
+    
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
     var containerViewArea = Area()
     
@@ -40,6 +43,8 @@ class HomeViewController: UIViewController {
     // MARK: - Function
     
     func setContainerViewArea() {
+        let screenWidth = Double(self.view.bounds.width)
+        
         var defaults = NSUserDefaults.standardUserDefaults()
         
         containerViewArea.width = "\(DEFAULT_WIDTH)"
@@ -53,7 +58,12 @@ class HomeViewController: UIViewController {
             containerViewArea.height = height
         }
         
+        var assumeWidth = containerViewArea.widthValue() * screenWidth / containerViewArea.maxLengthValue()
+        var assumeHeight = containerViewArea.heightValue() * screenWidth / containerViewArea.maxLengthValue()
+        
         widthHeightLabel.text = "\(containerViewArea.width) × \(containerViewArea.height)"
+        widthConstraint.constant = CGFloat(assumeWidth)
+        heightConstraint.constant = CGFloat(assumeHeight)
     }
     
     
